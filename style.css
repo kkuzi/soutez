@@ -1,0 +1,167 @@
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+:root {
+  --color-svetlemodra: rgba(119, 163, 219, 0.733);
+  --color-svetlejsimodra: rgba(119, 163, 219, 0.433);
+  --color-tmavemodra: rgb(18, 52, 92);
+  --color-tmavejsimodra: rgb(119, 163, 219);
+  --color-extrasvetla: rgb(233, 242, 247);
+}
+
+/*Fonty:
+h1 a h2
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  text
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/  
+
+body {
+    font-family: "DM Sans", sans-serif;
+    
+}
+
+.stranka {
+  max-width: 650px;
+}
+
+.hlavicka {
+  padding: 10px 20px;
+}
+
+.hlavicka img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+.hlavicka li {
+  list-style: none;
+  text-align: center;
+  background-color: var(--color-svetlemodra);  
+  border: 2px solid var(--color-tmavemodra);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 100vw;
+  font-weight: 700;
+}
+
+.hlavicka a {
+  text-decoration: none;
+  color: var(--color-tmavemodra);
+}
+
+.hlavicka a:hover {
+  color: var(--color-extrasvetla);
+}
+
+.hlavicka li:hover {
+  background-color: var(--color-tmavejsimodra);
+}
+
+.hlavicka ul {
+  padding: 0;
+  
+}
+
+.menu__dvojce {
+  display: flex;
+  gap: 5px;
+  justify-content:space-between;
+  
+}
+
+.menu__dvojce li {
+  width: 300px;
+
+}
+
+.obsah {
+  
+  padding: 50px 0;
+  background-color: var(--color-svetlejsimodra);
+}
+
+
+
+.obsah__pohar img {
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  border-radius: 100vw;
+}
+
+.obsah__text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.noty {
+  margin: 0 auto;
+}
+
+.noty img {
+  max-width: 500px;
+  
+}
+
+@media (min-width: 650px) {
+ .stranka {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+ }
+
+ .menu__dvojce {
+  display: block;
+ }
+
+ .menu__dvojce li {
+  max-width: 200px;
+
+}
+
+ .obsah {
+  max-width: 600px;
+ }
+
+ .obsah__pohar img {
+  max-width: 500px;
+  padding: 50px;
+}
+
+.obsah__text {
+  padding: 0;
+  margin: 0;
+}
+
+ .noty {
+  margin-right: auto;
+ }
+
+ .noty img {
+  max-width: 800px;
+ }
+}
+
+
+
+
+
